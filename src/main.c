@@ -6,7 +6,7 @@ double chi_squared(double *observed, double *expected, int n) {
 
     for (int i = 0; i < n; i++) {
         double delta = (observed[i] - expected[i]);
-        total += (delta * delta) / n;
+        total += (delta * delta) / expected[i];
     }
 
     return total;
