@@ -1,4 +1,5 @@
 # chi-squared-c
+Calculate chi squared
 
 ### Equation
 ```
