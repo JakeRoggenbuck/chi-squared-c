@@ -1,16 +1,6 @@
+#include "chi.h"
 #include <stdio.h>
 #define SIZE 6
-
-double chi_squared(double *observed, double *expected, int n) {
-    double total = 0.0;
-
-    for (int i = 0; i < n; i++) {
-        double delta = (observed[i] - expected[i]);
-        total += (delta * delta) / expected[i];
-    }
-
-    return total;
-}
 
 int main() {
     double ob[SIZE] = {21.0, 6.0, 17.0, 21.0, 15.0, 6.0};
